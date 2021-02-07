@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --tenne-tawny: #d65108;
+    --tenne-tawny-dark: #b54507;
+}
+body{
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+.text{
+    opacity: 0.8;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*  */
+.container{
+    min-height: 100vh;
+}
+.meal-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+.meal-search{
+    margin: 2rem 0;
+}
+.meal-search cite{
+    font-size: 1rem;
+}
+.meal-search-box{
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+}
+.search-control,
+.search-btn{
+    width: 100%;
+}
+.search-control{
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid var(--tenne-tawny);
+    color: var(--tenne-tawny);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.search-control::placeholder{
+    color: var(--tenne-tawny);
+}
+.search-btn{
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background: var(--tenne-tawny);
+    color: #fff;
+    border: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+.search-btn:hover{
+    background: var(--tenne-tawny-dark);
+}
+#mealArea {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+}
+
+#mealArea img {
+    width: 100%;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.meal {
+    box-shadow: 5px 5px 5px 5px rgb(172, 166, 162);
+    text-align: center;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#ingredientsArea {
+    width: 50%;
+    margin: auto;
+    text-align: start;
+}
+
+.mealName {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.ingredientName {
+    padding: 25px 0px;
+    font-weight: 700;
+}
+
+.ingredientID-title {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#ingredientsArea>li {
+    list-style: none;
+    font-size: 30px;
+}
+
+img.ingredient-img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.ingredient {
+    margin-bottom: 50px;
+}
