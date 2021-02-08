@@ -1,5 +1,5 @@
 // Search meal by name
-function findMeal(mealName) {
+const findMeal=(mealName)=> {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`)
         .then(res => res.json())
         .then(data => {
